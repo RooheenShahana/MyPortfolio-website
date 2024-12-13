@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "./component/navbar";
 
 import Footer from "./component/footer";
-import Hero from "./component/hero";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -29,10 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        
-      <Navbar />
-      
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Navbar />
+
         {children}
         <Footer />
       </body>
